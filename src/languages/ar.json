@@ -1,0 +1,294 @@
+{
+  //Languages
+  "arabic":"عربي",
+  "english":"English",
+  "sorry_something_went_wrong":"عذرا، هناك خطأ ما",
+
+  //Drawer navigation
+  "home":"الصفحة الرئيسية",
+  "my_rides":"رحلاتي",
+  "subscription":"الاشتراك",
+  "profile_settings":"إعدادات الملف الشخصي",
+  "wallet":"محفظة",
+  "notifications":"إشعارات",
+  "rewards":"المكافآت",
+  "refer_earn":"الإحالة وكسب",
+  "sos_settings":"إعدادات أنت",
+  "faq":"التعليمات",
+  "privacy_policies":"سياسات الخصوصية",
+  "about_us":"معلومات عنا",
+  "logout":"تسجيل خروج",
+
+  //About us
+  "about_us":"معلومات عنا",
+  "version":"الإصدار",
+  "who_we_are":"من نحن",
+  "contact_details":"بيانات المتصل",
+
+  //Add sos
+  "add_sos_contact":"إضافة جهة اتصال أنت",
+  "phone_number":"رقم التليفون",
+  "name":"اسم",
+  "john":"يوحنا",
+  "submit":"يقدم",
+
+  //Chat
+  "chat_to":"الدردشة مع",
+
+  //Complaint
+  "tell_us_about_it":"اخبرنا عنها",
+  "enter_your_command":"أدخل الأمر الخاص بك",
+  "submit":"إرسال",
+  "your_complaint_registered_successfully":"تم تسجيل شكواك بنجاح!",
+
+  //Complaint category
+  "choose_an_issue":"اختر مشكلة",
+
+  //Complaint sub category
+  "billing_related":"الفواتير ذات الصلة",
+
+  //confirm booking
+  "confirm_booking":"تأكيد الحجز",
+  "total_fare":"الأجرة الكلية",
+  "booking_for":"الحجز لـ",
+  "apply_coupon":"تطبيق القسيمة",
+  "confirm_booking":"تأكيد الحجز",
+  "select_a_payment_option":"حدد خيار الدفع",
+  "base_fare":"قاعدة تفعل",
+  "tax":"ضريبة",
+  "discount":"خصم",
+  "total":"مجموع",
+  "this_fare_may_be_different_from_your_actual_fare":"ملاحظة: قد تختلف هذه الأجرة عن أجرتك الفعلية",
+  "please_wait_while_searching_the_driver":"يرجى الانتظار أثناء البحث عن السائق",
+  "success":"نجاح!",
+  "your_scheduled_booking_is_registered_please_wait_our_driver_will_contact_you_soon":"تم تسجيل حجزك المجدول ، يرجى الانتظار وسيتصل بك سائقنا قريبًا!",
+  "oK":"موافق",
+  "please_select_payment_method":"الرجاء تحديد طريقة الدفع",
+  "sorry_drivers_not_available_right_now_please_try_again":"عذرا السائقين غير متاحين الآن ، يرجى المحاولة في نوع مختلف من وسائل النقل.",
+  "fare_details":"تفاصيل الأجرة",
+
+  //Create email
+  "enter_your_email":"أدخل بريدك الإلكتروني",
+  "john_gmail_com":"عنوان بريد الكتروني",
+  "please_enter_email_address":"الرجاء إدخال عنوان البريد الإلكتروني",
+
+  //Create name
+  "enter_your_name":"أدخل أسمك",
+  "john":"يوحنا",
+  "please_enter_first_name_and_last_name":"الرجاء إدخال الاسم الأول واسم العائلة",
+  "willams":"ويلامس",
+  "enter_refferal_code":"أدخل رمز الإحالة (اختياري)",
+
+  //Create password
+  "enter_your_password":"ادخل رقمك السري",
+  "please_enter_password":"الرجاء إدخال كلمة المرور",
+  "refferal_code":"كود الإحالة",
+
+  //Edit email
+  "edit_your_email_address":"قم بتحرير عنوان بريدك الإلكتروني",
+  "update":"تحديث",
+  "please_enter_email_address":"الرجاء إدخال عنوان البريد الإلكتروني",
+
+  //Edit first name
+  "edit_your_first_name":"قم بتحرير اسمك الأول",
+  "update":"تحديث",
+  "please_enter_first_name":"الرجاء إدخال الاسم الأول",
+
+  //Edit gender
+  "edit_your_gender":"قم بتعديل جنسك",
+  "update":"تحديث",
+  "please_choose_your_gender":"الرجاء اختيار جنسك",
+
+  //Edit last name
+  "edit_your_last_name":"قم بتحرير اسمك الأخير",
+  "update":"تحديث",
+  "please_enter_last_name":"الرجاء إدخال الاسم الأخير",
+
+  //Edit password
+  "edit_your_password":"قم بتحرير كلمة المرور الخاصة بك",
+  "please_enter_password":"الرجاء إدخال كلمة المرور",
+
+  //edit phone number
+  "edit_your_phone_number":"قم بتحرير رقم هاتفك",
+  "phone_number":"رقم التليفون",
+  "please_enter_phone_number":"الرجاء إدخال رقم الهاتف",
+  "please_enter_valid_phone_number":"الرجاء إدخال رقم هاتف صحيح",
+  "please_enter_your_registered_mobile_number":"الرجاء إدخال رقم هاتفك المحمول المسجل",
+  "update":"تحديث",
+
+  //faq
+  "faq":"التعليمات",
+
+  //Forgot
+  "forgot_password":"هل نسيت كلمة السر",
+  "please_enter_your_phone_number":"يرجى إدخال رقم الهاتف الخاص بك",
+  "phone_number":"رقم التليفون",
+  "you_need_to_enter_your_phone_number_to_reset_the_password":"تحتاج إلى إدخال رقم هاتفك لإعادة تعيين كلمة المرور",
+
+  //Forgot otp
+  "resend_otp":"إعادة إرسال",
+  "please_enter_OTP":"الرجاء إدخال الشفرة",
+  "resend_code_in":"إعادة إرسال الرمز بتنسيق ",
+  "enter_the_code_you_have_received_by_SMS_in_order_to_verify_account":"أدخل الرمز الذي تلقيته عبر الرسائل القصيرة لتأكيد الحساب.",
+  
+  //Home
+  "destination":"وجهة",
+  "pickup_location":"اختر موقعا",
+  "drop_location":"إسقاط الموقع",
+  "select_package":"حدد الحزمة",
+  "change_vehicle":"تغيير السيارة",
+  "ride":"اركب",
+  "location_access_required":"مطلوب الوصول إلى الموقع",
+  "needs_to_access_your_location_for_tracking":"يحتاج إلى الوصول إلى موقعك للتتبع",
+  "sorry_cannot_fetch_your_location":"آسف ، لا يمكن إحضار موقعك",
+  "is_outside_city_limits_you_can_continue_to_book_an_outstation_ride_instead":"خارج حدود المدينة ، يمكنك الاستمرار في حجز رحلة خارجية بدلاً من ذلك.",
+  "destination_city_cannot_be_same_as_pick_up_city_for_outstation_rides_please_change_the_destination_to_procees_further":"لا يمكن أن تكون مدينة الوجهة هي مدينة الالتقاء في الرحلات الخارجية. يُرجى تغيير الوجهة لإجراء مزيد من الإجراءات.",
+  "please_select_valid_pickup_and_drop_location":"يرجى تحديد موقع استلام وإفلات صالح",
+  "sorry_you_are_not_applicable_for_female_driver_filter":"عذرا ، أنت لا تنطبق على مرشح سائق الإناث",
+  "please_update_your_gender_in_profile_settings_page":"يرجى تحديث جنسك في صفحة إعدادات الملف الشخصي",
+  "view_details":"عرض التفاصيل",
+  //Location
+  "search":"ابحث في موقعك",
+  "favourite_places":"الأماكن المفضلة",
+  "pickup_location":"اختر موقعا",
+  "drop_location":"إسقاط الموقع",
+  "recent_places":"الاماكن التي قمت بزيارتها مؤخرا",
+
+  //Location enable
+  "enable_your_GPS_location":"قم بتمكين موقع GPS الخاص بك",
+  "please_allow":"يرجى السماح",
+  "to_enable_your_phone_GPS_for_accurate_pickup.":"لتمكين نظام تحديد المواقع العالمي (GPS) الخاص بهاتفك من الالتقاط الدقيق.",
+  "enable_GPS":"تمكين GPS",
+
+  //Login
+  "enter_your_phone_number":"أدخل رقم هاتفك",
+  "phone_number":"رقم التليفون",
+  "please_enter_phone_number":"الرجاء إدخال رقم الهاتف",
+  "please_enter_valid_phone_number":"الرجاء إدخال رقم هاتف صحيح",
+
+  //LoginHome
+  "riding_with":"ركوب مع",
+  "phone_number":"رقم التليفون",
+  "Enter_Your_Mobile_Number":"أدخل رقم هاتفك المحمول",
+
+  //Logout
+  "please_wait":"انتظر من فضلك....",
+
+  //My ride
+  "my_rides":"رحلاتي",
+  "no_rides_found":"لم يتم العثور على رحلات",
+
+  //notifications
+  "notifications":"إشعارات",
+
+   //Password
+  "enter_your_password":"ادخل رقمك السري",
+  "forgot_your_password":"نسيت كلمة المرور الخاصة بي",
+  "please_enter_password":"الرجاء إدخال كلمة المرور",
+
+  //Privacy policy
+  "privacy_policies":"سياسات الخصوصية",
+
+  //Profile
+  "profile":"حساب تعريفي",
+  "first_name":"الاسم الاول",
+  "last_name":"الكنية",
+  "phone_number":"رقم التليفون",
+  "email":"بريد الالكتروني",
+  "gender":"جنس تذكير أو تأنيث",
+  "password":"كلمة المرور",
+  "successfully_updated":"تم التحديث بنجاح",
+  "error_on_while_uploading_try_again":"خطأ أثناء التحميل ، حاول مرة أخرى",
+
+  //Promo
+  "promo_codes":"الرموز الترويجية",
+  "apply":"يتقدم",
+
+  //Ratings
+  "your_need_to_pay":"حاجتك للدفع",
+  "your_bill":"فاتورتك",
+  "submit":"إرسال",
+
+  //Refer 
+  "refer_earn":"الإحالة وكسب",
+  "refer_friends":"قم بإحالة الأصدقاء",
+  "share_your_referral":"شارك الإحالة الخاصة بك",
+  "refer_your_friends_and_get":"ادع أصدقاءك واحصل على",
+  "your_refferal_code_from":"رمز الإحالة الخاص بك من",
+  "app_is": "التطبيق",
+
+  //Reset password
+  "reset_password":"إعادة تعيين كلمة المرور",
+  "enter_your_new_password":"أدخل كلمة المرور الجديدة",
+  "password":"كلمة المرور",
+  "confirm_password":"تأكيد كلمة المرور",
+  "please_fill_all_fields":"لو سمحت أملأ كل الحقول",
+  "both_password_is_not_same":"كلا كلمة المرور ليست هي نفسها",
+
+  //rewards
+  "my_rewards":"مكافآتي",
+  "no_rewards_found":"لم يتم العثور على مكافآت.",
+
+  //ride
+  "sos":"أنت",
+  "cancel":"يلغي",
+  "chat":"محادثة",
+  "call":"مكالمة",
+  "please_confirm":"يرجى تأكيد",
+  "are_you_in_emergency":"هل انت في حالة طوارئ؟",
+  "yes":"نعم",
+  "no":"لا",
+  "location_access_required":"Location Access Required",
+  "needs_to_access_your_location_for_tracking":"needs to Access your location for tracking",
+  "sorry_cannot_fetch_your_location":"Sorry, cannot fetch your location",
+  "alert":"انذار",
+  "okay":"تمام",
+  "cancel":"يلغي",
+  "please_select_reason":"الرجاء تحديد السبب",
+  "CLOSE":"أغلق",
+  "your_tip_added_successfully":"شكرا لك ، تم إضافة نصيحتك بنجاح",
+
+  //Ride details
+  "you_rated":"قمت بالتقييم",
+  "trip_type":"نوع الرحلة",
+  "km":"كم",
+  "min":"دقيقة",
+  "bill_details":"تفاصيل الفاتورة",
+  "fare":"أجرة",
+  "taxes":"الضرائب",
+  "discount":"خصم",
+  "total_bill":"إجمالي الفاتورة",
+  "payment_mode":"طريقة الدفع",
+  "invoice":"فاتورة",
+  "support":"الدعم",
+  "your_invoices_successfully_processes":"فاتورتك تتم معالجتها بنجاح",
+  "tip_for_you":"نصيحة لك",
+  "free_ride":"توصيلة بالمجان",
+
+  //sos settings
+  "sos_contacts":"جهات اتصال أنت",
+  "no_contacts_found":"لم يتم العثور على جهات اتصال",
+  "add":"يضيف",
+  "success":"نجاح",
+  "deleted_successfully":"حذف بنجاح",
+  "oK":"موافق",
+
+  //vehicle categories
+  "vehicle_categories":"فئات المركبات",
+
+  //wallet
+  "wallet":"محفظة",
+  "your_balance":"رصيدك",
+  "add_money":"+ إضافة المال",
+  "wallet_transactions":"معاملات المحفظة",
+  "select_a_payment_option":"حدد خيار الدفع",
+  "please_select_payment_method":"الرجاء تحديد طريقة الدفع",
+  "add_wallet":"أضف المحفظة",
+  "please_enter_your_amount_here":"الرجاء إدخال المبلغ الخاص بك هنا",
+  "enter_amount":"أدخل المبلغ",
+  "submit":"يقدم",
+  "cancel":"يلغي",
+
+  "Admin_Chat":"إدارة الدردشة",
+
+}

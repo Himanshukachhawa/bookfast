@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "4775156353",
+    "firebase_url": "https://bookfast-cabs-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bookfast-cabs",
+    "storage_bucket": "bookfast-cabs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4775156353:android:d288758a64c3d823914b80",
+        "android_client_info": {
+          "package_name": "com.bookfast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4775156353-v65um3gbt0b8ls7rsnf9q6uocbk6h84p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7zh8ogzWlvH3c4eyuPEE42i9PVsI_vio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4775156353-v65um3gbt0b8ls7rsnf9q6uocbk6h84p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4775156353:android:a1037da8d160328b914b80",
+        "android_client_info": {
+          "package_name": "com.c2d.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4775156353-v65um3gbt0b8ls7rsnf9q6uocbk6h84p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7zh8ogzWlvH3c4eyuPEE42i9PVsI_vio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4775156353-v65um3gbt0b8ls7rsnf9q6uocbk6h84p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

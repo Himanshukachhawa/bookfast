@@ -1,0 +1,304 @@
+{
+  //Languages
+  "arabic":"Arabic",
+  "english":"English",
+  "sorry_something_went_wrong":"Sorry something went wrong",
+
+  //Drawer navigation
+  "home":"Home",
+  "my_rides":"My Rides",
+  "subscription":"Subscription",
+  "profile_settings":"Profile Settings",
+  "wallet":"Wallet",
+  "notifications":"Notifications",
+  "rewards":"Rewards",
+  "refer_earn":"Refer & Earn",
+  "sos_settings":"SOS Settings",
+  "faq":"FAQ",
+  "privacy_policies":"Privacy Policies",
+  "about_us":"About Us",
+  "logout":"Logout",
+
+  //About us
+  "about_us":"About Us",
+  "version":"Version",
+  "who_we_are":"Who we are",
+  "contact_details":"Contact details",
+
+  //Add sos
+  "add_sos_contact":"Add SOS Contact",
+  "phone_number":"Phone Number",
+  "name":"Name",
+  "john":"John",
+  "submit":"SUBMIT",
+
+  //Chat
+  "chat_to":"Chat to",
+
+  //Complaint
+  "tell_us_about_it":"Tell us about it",
+  "enter_your_command":"Enter your command",
+  "your_complaint_registered_successfully":"Your complaint registered successfully !",
+
+  //Complaint category
+  "choose_an_issue":"Choose an issue",
+
+  //Complaint sub category
+  "billing_related":"Billing Related",
+
+  //confirm booking
+  "confirm_booking":"Confirm booking",
+  "total_fare":"Total Fare",
+  "booking_for":"Booking for ",
+  "apply_coupon":"Apply Coupon",
+  "confirm_booking":"CONFIRM BOOKING",
+  "select_a_payment_option":"Select a payment option",
+  "base_fare":"Base fare",
+  "tax":"Tax",
+  "discount":"Discount",
+  "total":"Total",
+  "this_fare_may_be_different_from_your_actual_fare":"Note: This fare may be different from your actual fare",
+  "please_wait_while_searching_the_driver":"Please wait while searching the driver",
+  "success":"Success!",
+  "your_scheduled_booking_is_registered_please_wait_our_driver_will_contact_you_soon":"Your scheduled booking is registered, please wait our driver will contact you soon!",
+  "oK":"OK",
+  "please_select_payment_method":"Please select payment method",
+  "sorry_drivers_not_available_right_now_please_try_again":"Sorry drivers aren't available right now, please try in different type of transport.",
+  "fare_details":"Fare details",
+
+  //Create email
+  "enter_your_email":"Enter your email",
+  "john_gmail_com":"john@gmail.com",
+  "please_enter_email_address":"Please enter email address",
+
+  //Create name
+  "enter_your_name":"Enter your name",
+  "john":"John",
+  "please_enter_first_name_and_last_name":"Please enter first name and last name",
+  "willams":"Willams",
+  "enter_refferal_code":"Enter Referral Code(Optional)",
+
+  //Create password
+  "enter_your_password":"Enter your OTP",
+  "please_enter_password":"Please enter password",
+  "refferal_code":"Refferal Code",
+
+  //Edit email
+  "edit_your_email_address":"Edit your email address",
+  "update":"Update",
+  "please_enter_email_address":"Please enter email address",
+
+  //Edit first name
+  "edit_your_first_name":"Edit your first name",
+  "update":"Update",
+  "please_enter_first_name":"Please enter first name ",
+
+  //Edit gender
+  "edit_your_gender":"Edit your gender",
+  "update":"Update",
+  "please_choose_your_gender":"Please choose your gender",
+
+  //Edit last name
+  "edit_your_last_name":"Edit your last name",
+  "update":"Update",
+  "please_enter_last_name":"Please enter last name",
+
+  //Edit password
+  "edit_your_password":"Edit your password",
+  "please_enter_password":"Please enter password",
+
+  //edit phone number
+  "edit_your_phone_number":"Edit your phone number",
+  "phone_number":"Phone Number",
+  "please_enter_phone_number":"Please enter phone number",
+  "please_enter_valid_phone_number":"Please enter valid phone number",
+  "please_enter_your_registered_mobile_number":"Please enter your registered mobile number",
+  "update":"Update",
+
+  //faq
+  "faq":"Faq",
+
+  //Forgot
+  "forgot_password":"Forgot password",
+  "please_enter_your_phone_number":"Please enter your phone number",
+  "phone_number":"Phone Number",
+  "you_need_to_enter_your_phone_number_to_reset_the_password":"You need to enter your phone number to reset the password",
+
+  //Forgot otp
+  "please_enter_OTP":"Please enter OTP",
+  "resend_otp":"Resend OTP",
+  "resend_code_in":"Resend code in ",
+  "enter_the_code_you_have_received_by_SMS_for_reset_your_password":"Enter the code you have received by SMS for reset your password.",
+
+  //Home
+  "destination":"Destination",
+  "pickup_location":"Pickup Location",
+  "drop_location":"Drop Location",
+  "select_package":"Select Package",
+  "change_vehicle":"CHANGE VEHICLE",
+  "ride":"RIDE",
+  "location_access_required":"Location Access Required",
+  "sorry_cannot_fetch_your_location":"Sorry, cannot fetch your location",
+  "is_outside_city_limits_you_can_continue_to_book_an_outstation_ride_instead":"is outside city limits.You can continue to book an outstation ride instead.",
+  "destination_city_cannot_be_same_as_pick_up_city_for_outstation_rides_please_change_the_destination_to_procees_further":"Destination city cannot be same as Pick up city for Outstation rides.Please change the destination to procees further.",
+  "please_select_valid_pickup_and_drop_location":"Please select valid pickup and drop location",
+  "sorry_you_are_not_applicable_for_female_driver_filter":"Sorry, you are not applicable for female driver filter",
+  "please_update_your_gender_in_profile_settings_page":"Please update your gender in profile settings page",
+  "view_details":"View Details",
+  //Location
+  "search":"Search your location",
+  "favourite_places":"Favourite Places",
+  "pickup_location":"Pickup Location",
+  "drop_location":"Drop Location",
+  "recent_places":"Recent Places",
+
+  //Location enable
+  "enable_your_GPS_location":"Enable your GPS location",
+  "please_allow":"Please allow",
+  "to_enable_your_phone_GPS_for_accurate_pickup.":"to enable your phone GPS for accurate pickup.",
+  "enable_GPS":"Enable GPS",
+
+  //Login
+  "enter_your_phone_number":"Enter your phone number",
+  "phone_number":"Phone Number",
+  "please_enter_phone_number":"Please enter phone number",
+  "please_enter_valid_phone_number":"Please enter valid phone number",
+
+  //LoginHome
+  "riding_with":"Riding with",
+  "phone_number":"Phone Number",
+  "Enter_Your_Mobile_Number":"Enter Your Mobile Number",
+
+  //Logout
+  "please_wait":"Please wait....",
+
+  //My ride
+  "my_rides":"My Rides",
+  "no_rides_found":"No Rides Found",
+
+  //notifications
+  "notifications":"Notifications",
+
+  //otp
+  "please_enter_valid_otp":"Please enter valid otp",
+  "please_enter_OTP":"Please enter OTP",
+  "enter_the_code_you_have_received_by_SMS_in_order_to_verify_account":"Enter the code you have received by SMS in order to verify account.",
+
+
+  //Password
+  "enter_your_password":"Enter your OTP",
+  "forgot_your_password":"Forgot my password",
+  "please_enter_password":"Please enter password",
+
+  //Privacy policy
+  "privacy_policies":"Privacy Policies",
+
+  //Profile
+  "profile":"Profile",
+  "first_name":"First name",
+  "last_name":"Last name",
+  "phone_number":"Phone number",
+  "email":"Email",
+  "gender":"Gender",
+  "password":"Password",
+  "updated_successfully":"Updated Successfully",
+  "error_on_while_uploading_try_again":"Error on while uploading,Try again",
+
+  //Promo
+  "promo_codes":"Promo codes",
+  "apply":"Apply",
+
+  //Ratings
+  "your_need_to_pay":"Your need to pay",
+  "your_bill":"Your bill",
+  "submit":"SUBMIT",
+
+  //Refer 
+  "refer_earn":"Refer & Earn",
+  "refer_friends":"Refer friends",
+  "share_your_referral":"Share your referral",
+  "refer_your_friends_and_get":"Refer your friends and get",
+  "your_refferal_code_from":"your refferal code from ",
+  "app_is": "app is",
+
+  //Reset password
+  "reset_password":"Reset password",
+  "enter_your_new_password":"Enter your new password",
+  "password":"Password",
+  "confirm_password":"Confirm Password",
+  "please_fill_all_fields":"Please fill all fields",
+  "both_password_is_not_same":"Both passsword is not same",
+
+  //rewards
+  "my_rewards":"My Rewards",
+  "no_rewards_found":"No Rewards Found.",
+
+  //ride
+  "sos":"SOS",
+  "cancel":"Cancel",
+  "chat":"Chat",
+  "call":"Call",
+  "please_confirm":"Please Confirm",
+  "are_you_in_emergency":"Are you in emergency?",
+  "yes":"Yes",
+  "no":"No",
+  "location_access_required":"Location Access Required",
+  "needs_to_access_your_location_for_tracking":"needs to Access your location for tracking",
+  "sorry_cannot_fetch_your_location":"Sorry, cannot fetch your location",
+  "alert":"Alert",
+  "okay":"Okay",
+  "cancel":"Cancel",
+  "please_select_reason":"Please select reason",
+  "CLOSE":"CLOSE",
+  "This_Includes_Applies_Cancellation_Policies":"This Includes Applies Cancellation Policies",
+  "your_tip_added_successfully":"Thank you, Your tip added successfully",
+
+  //Ride details
+  "you_rated":"You Rated",
+  "trip_type":"Trip Type",
+  "km":"km",
+  "min":"min",
+  "bill_details":"Bill details",
+  "fare":"Fare",
+  "taxes":"Taxes",
+  "discount":"Discount",
+  "total_bill":"Total bill",
+  "payment_mode":"Payment Mode",
+  "invoice":"Invoice",
+  "support":"Support",
+  "your_invoices_successfully_processes":"Your invoices successfully processes",
+  "tip_for_you":"Tip for you",
+  "free_ride":"Free ride",
+
+  //sos settings
+  "sos_contacts":"SOS Contacts",
+  "no_contacts_found":"No Contacts Found",
+  "add":"ADD",
+  "success":"Success",
+  "deleted_successfully":"Deleted Successfully",
+  "ok":"Ok",
+
+  //vehicle categories
+  "vehicle_categories":"Vehicle Categories",
+
+  //wallet
+  "wallet":"Wallet",
+  "your_balance":"Your balance",
+  "add_money":"+ Add Money",
+  "wallet_transactions":"Wallet transactions",
+  "add_wallet":"Add Wallet",
+  "please_enter_your_amount_here":"Please enter your amount here",
+  "enter_amount":"Enter amount",
+  "cancel":"Cancel",
+
+  //More
+  "more":"More",
+  "confirm":"Confirm",
+  "do_you_want_to_logout":"Do you want to logout?",
+  "yes":"Yes",
+  "no":"No",
+
+  "Admin_Chat":"Admin Chat",
+  
+
+}
