@@ -384,6 +384,14 @@ class Dashboard extends Component<Props> {
   };
 
   get_vehicles = async () => {
+    console.log(
+      "global.country_id",
+      global.country_id,
+      "drivers",
+      this.state.active_vehicle,
+      this.state.zone,
+      "++++=================="
+    );
     crashlytics().log("App mounted.");
     database()
       .ref(

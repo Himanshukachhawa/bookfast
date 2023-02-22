@@ -106,11 +106,6 @@ class Dashboard extends Component<Props> {
     this.get_trip_type();
     this.get_packages();
     this.getInitialLocation();
-    /*if(Platform.OS == "android"){
-        this.requestCameraPermission();
-      }else{
-        this.getInitialLocation();
-      }*/
   }
 
   async componentDidMount() {
@@ -125,6 +120,11 @@ class Dashboard extends Component<Props> {
       await this.find_active_vehicle();
       await this.subscription_detail();
     });
+    if (Platform.OS == "android") {
+      this.requestCameraPermission();
+    } else {
+      this.getInitialLocation();
+    }
     this.booking_sync();
   }
 
@@ -184,6 +184,14 @@ class Dashboard extends Component<Props> {
   };
 
   get_vehicles = async () => {
+    console.log(
+      "global.country_id",
+      global.country_id,
+      "drivers",
+      this.state.active_vehicle,
+      this.state.zone,
+      "++++=================="
+    );
     crashlytics().log("App mounted.");
     database()
       .ref(
@@ -362,7 +370,7 @@ class Dashboard extends Component<Props> {
         if (this.state.zone == response.data.result) {
           this.pick_now(response.data.result);
         } else {
-          alert("sorry service not available at this location");
+          alert("Driver is not available");
         }
       })
       .catch((error) => {
@@ -480,6 +488,8 @@ class Dashboard extends Component<Props> {
         }
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        await this.get_background_location_permission();
+
         await this.getInitialLocation();
       } else {
         alert(strings.sorry_cannot_fetch_your_location);
@@ -488,7 +498,16 @@ class Dashboard extends Component<Props> {
       alert(strings.sorry_cannot_fetch_your_location);
     }
   }
-
+  async get_background_location_permission() {
+    const bg_granted = await PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.ACCESS_BACKGROUND_LOCATION,
+      {
+        title: app_name + " " + strings.location_access_required,
+        message: strings.We_needs_to_Access_your_location_for_tracking,
+        buttonPositive: "OK",
+      }
+    );
+  }
   async getInitialLocation() {
     crashlytics().log("App mounted.");
     Geolocation.getCurrentPosition(

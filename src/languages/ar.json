@@ -55,6 +55,9 @@
   "confirm_booking":"تأكيد الحجز",
   "select_a_payment_option":"حدد خيار الدفع",
   "base_fare":"قاعدة تفعل",
+  "per_km":"Per km charges",
+  "per_m":"Per minute charges",
+
   "tax":"ضريبة",
   "discount":"خصم",
   "total":"مجموع",
@@ -103,6 +106,7 @@
   "edit_your_last_name":"قم بتحرير اسمك الأخير",
   "update":"تحديث",
   "please_enter_last_name":"الرجاء إدخال الاسم الأخير",
+  "We_needs_to_Access_your_location_for_tracking":"نحن بحاجة للوصول إلى موقعك للتتبع",
 
   //Edit password
   "edit_your_password":"قم بتحرير كلمة المرور الخاصة بك",

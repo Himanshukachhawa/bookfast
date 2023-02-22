@@ -54,6 +54,8 @@
   "confirm_booking":"CONFIRM BOOKING",
   "select_a_payment_option":"Select a payment option",
   "base_fare":"Base fare",
+  "per_km":"Per km charges",
+  "per_m":"Per minute charges",
   "tax":"Tax",
   "discount":"Discount",
   "total":"Total",
@@ -284,6 +286,8 @@
   //wallet
   "wallet":"Wallet",
   "your_balance":"Your balance",
+  "We_needs_to_Access_your_location_for_tracking":"We will track your location in background when the app is closed or not in use.",
+
   "add_money":"+ Add Money",
   "wallet_transactions":"Wallet transactions",
   "add_wallet":"Add Wallet",

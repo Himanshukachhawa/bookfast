@@ -96,6 +96,8 @@ class ConfirmBooking extends Component<Props> {
       discount: 0,
       tax: 0,
       base_fare: 0,
+      price_per_km: 0,
+      price_per_m: 0,
       payment_method: 0,
       payment_name: "Setup Payment",
       isLoading: false,
@@ -220,10 +222,13 @@ class ConfirmBooking extends Component<Props> {
       },
     })
       .then(async (response) => {
+        console.log("fares", response?.data?.result);
         this.setState({ isLoading: false });
         if (response.data.status == 1) {
           this.setState({
             base_fare: response.data.result.fare,
+            price_per_km: response.data?.result?.price_per_km,
+            price_per_m: response?.data?.result?.price_per_m,
             discount: response.data.result.discount,
             tax: response.data.result.tax,
             total_fare: response.data.result.total_fare,
@@ -243,6 +248,7 @@ class ConfirmBooking extends Component<Props> {
       data: { country_id: global.country_id, lang: global.lang },
     })
       .then(async (response) => {
+        console.log("paymentmethod", response?.data);
         this.setState({ payment_methods: response.data.result });
         this.select_payment(response.data.result[0]);
       })
@@ -450,7 +456,7 @@ class ConfirmBooking extends Component<Props> {
       payment_name: item.payment,
       payment_type: item.payment_type,
     });
-    //this.RBSheet.close();
+    this.RBSheet.close();
   };
 
   payment_done = async () => {
@@ -459,7 +465,7 @@ class ConfirmBooking extends Component<Props> {
         this.ride_confirm();
       } else if (this.state.payment_type == 2) {
         await this.stripe_card();
-      } else if (this.state.payment_type == 3) {
+      } else if (this.state.payment_type == 5) {
         await this.razorpay();
       }
     } else {
@@ -467,27 +473,29 @@ class ConfirmBooking extends Component<Props> {
     }
   };
 
-  /*razorpay = async() =>{
+  razorpay = async () => {
     var options = {
       currency: global.currency_short_code,
       key: global.razorpay_key,
       amount: this.state.total_fare * 100,
-      name: global.app_name,
+      name: "BookFast",
       prefill: {
         email: global.email,
         contact: global.phone_with_code,
-        name: global.first_name
+        name: global.first_name,
       },
-      theme: {color: colors.theme_fg}
-    }
-    RazorpayCheckout.open(options).then((data) => {
-      this.ride_confirm();
-    }).catch((error) => {
-      alert('Your transaction is declined.');
-    });
-  }
+      theme: { color: colors.theme_fg },
+    };
+    RazorpayCheckout.open(options)
+      .then((data) => {
+        this.ride_confirm();
+      })
+      .catch((error) => {
+        alert("Your transaction is declined.");
+      });
+  };
 
-  stripe_card = async() =>{
+  /* stripe_card = async() =>{
 
     stripe.setOptions({
       publishableKey: global.stripe_key,
@@ -717,11 +725,15 @@ class ConfirmBooking extends Component<Props> {
                       <Text style={styles.payment}>Subscription</Text>
                     </View>
                   ) : (
-                    <View>
+                    <TouchableOpacity
+                      onPress={() => {
+                        this.choose_payment();
+                      }}
+                    >
                       <Text style={styles.payment}>
                         {this.state.payment_name}
                       </Text>
-                    </View>
+                    </TouchableOpacity>
                   )}
                 </View>
               </View>
@@ -819,6 +831,28 @@ class ConfirmBooking extends Component<Props> {
                   <Text style={styles.font}>
                     {global.currency}
                     {this.state.base_fare}
+                  </Text>
+                </View>
+              </View>
+              <View style={{ flexDirection: "row", margin: 5 }}>
+                <View style={{ width: "70%" }}>
+                  <Text style={styles.font}>{strings.per_km}</Text>
+                </View>
+                <View style={{ width: "30%" }}>
+                  <Text style={styles.font}>
+                    {global.currency}
+                    {this.state.price_per_km}
+                  </Text>
+                </View>
+              </View>
+              <View style={{ flexDirection: "row", margin: 5 }}>
+                <View style={{ width: "70%" }}>
+                  <Text style={styles.font}>{strings.per_m}</Text>
+                </View>
+                <View style={{ width: "30%" }}>
+                  <Text style={styles.font}>
+                    {global.currency}
+                    {this.state.price_per_km}
                   </Text>
                 </View>
               </View>

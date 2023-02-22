@@ -317,6 +317,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(Splash);
 const styles = StyleSheet.create({
   image: {
     height: "50%",
-    width: "100%",
+    width: "96%",
   },
 });
