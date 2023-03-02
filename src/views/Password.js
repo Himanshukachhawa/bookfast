@@ -7,6 +7,7 @@ import {
   TextInput,
   TouchableOpacity,
   Platform,
+  ImageBackground,
 } from "react-native";
 import * as colors from "../assets/css/Colors";
 import {
@@ -17,6 +18,8 @@ import {
   login,
   go_icon,
   check_phone,
+  height_30,
+  width_80,
 } from "../config/Constants";
 import Loader from "../components/Loader";
 import { connect } from "react-redux";
@@ -232,94 +235,123 @@ class Password extends Component<Props> {
   render() {
     const { isLoding, error, data, message, status } = this.props;
     return (
-      <View
+      <ImageBackground
+        source={require("../assets/img/Splash_jpg.jpg")}
         style={{
-          backgroundColor: colors.theme_fg_three,
           height: "100%",
           width: "100%",
+          flex: 1,
         }}
       >
-        <View style={{ backgroundColor: colors.theme_bg_three }}>
-          <Loader visible={this.state.isLoading} />
-          <View style={styles.padding_20}>
-            <Text style={styles.password_title}>
-              {strings.enter_your_password}
-            </Text>
-            <View style={styles.margin_10} />
-            <TextInput
-              ref={(ref) => (this.password = ref)}
-              secureTextEntry={true}
-              keyboardType={"number-pad"}
-              placeholderTextColor={colors.theme_fg_two}
-              placeholder="******"
-              style={styles.textinput}
-              onChangeText={(TextInputValue) =>
-                this.setState({ password: TextInputValue })
-              }
-            />
-            <View style={styles.margin_10} />
-            <Text style={styles.description}>
-              {
-                strings.enter_the_code_you_have_received_by_SMS_in_order_to_verify_account
-              }
-            </Text>
-            <View style={{ margin: 10 }} />
-            {this.state.timer == 0 ? (
-              <Text
-                onPress={this.call_resend.bind(
-                  this,
-                  this.state.phone_number.slice(3)
-                )}
-                style={{
-                  fontSize: 15,
-                  fontFamily: font_title,
-                  color: colors.theme_fg_two,
-                  alignSelf: "center",
-                  textDecorationLine: "underline",
-                }}
-              >
-                {strings.resend_otp}
+        <View
+          style={{
+            flex: 1,
+          }}
+        >
+          <View style={{ marginTop: height_30 }}>
+            <Loader visible={this.state.isLoading} />
+            <View style={styles.padding_20}>
+              <Text style={styles.password_title}>
+                {strings.enter_your_password}
               </Text>
-            ) : (
-              <Text
-                style={{
-                  fontSize: 15,
-                  fontFamily: font_title,
-                  color: colors.theme_fg_four,
-                  alignSelf: "center",
-                }}
-              >
-                {strings.resend_code_in}
-                {this.state.timer}
+              <View style={styles.margin_10} />
+              <TextInput
+                ref={(ref) => (this.password = ref)}
+                secureTextEntry={true}
+                keyboardType={"number-pad"}
+                placeholderTextColor={colors.theme_fg_two}
+                placeholder="******"
+                style={styles.textinput}
+                onChangeText={(TextInputValue) =>
+                  this.setState({ password: TextInputValue })
+                }
+              />
+              <View style={styles.margin_10} />
+              <Text style={styles.description}>
+                {
+                  strings.enter_the_code_you_have_received_by_SMS_in_order_to_verify_account
+                }
               </Text>
-            )}
-            {/* <View>
+              <View style={{ margin: 10 }} />
+              {this.state.timer == 0 ? (
+                <Text
+                  onPress={this.call_resend.bind(
+                    this,
+                    this.state.phone_number.slice(3)
+                  )}
+                  style={{
+                    fontSize: 15,
+                    fontFamily: font_title,
+                    color: colors.theme_fg_two,
+                    alignSelf: "center",
+                    textDecorationLine: "underline",
+                  }}
+                >
+                  {strings.resend_otp}
+                </Text>
+              ) : (
+                <Text
+                  style={{
+                    fontSize: 15,
+                    fontFamily: font_title,
+                    color: colors.theme_fg_four,
+                    alignSelf: "center",
+                  }}
+                >
+                  {strings.resend_code_in}
+                  {this.state.timer}
+                </Text>
+              )}
+              {/* <View>
               <View style={styles.margin_10} />
               <Text onPress={this.forgot.bind(this)} style={styles.forgot_text}>
                 {strings.forgot_your_password}
               </Text>
             </View> */}
-            <View style={styles.margin_10} />
+              <View style={styles.margin_10} />
 
-            <TouchableOpacity onPress={this.login.bind(this)}>
-              <Image
+              {/* <TouchableOpacity onPress={this.login.bind(this)}>
+                <Image
+                  style={{
+                    alignSelf: "flex-end",
+                    height: 65,
+                    width: 65,
+                    tintColor: colors.theme_bg,
+                  }}
+                  source={go_icon}
+                />
+              </TouchableOpacity> */}
+              <TouchableOpacity
+                onPress={this.login.bind(this)}
                 style={{
-                  alignSelf: "flex-end",
-                  height: 65,
-                  width: 65,
-                  tintColor: colors.theme_bg,
+                  backgroundColor: colors.theme_bg,
+                  width: width_80,
+                  alignSelf: "center",
+                  alignItems: "center",
+                  paddingVertical: 14,
+                  borderRadius: 20,
                 }}
-                source={go_icon}
-              />
-            </TouchableOpacity>
+              >
+                {/* <Image
+                  style={{
+                    alignSelf: "flex-end",
+                    height: 65,
+                    width: 65,
+                    tintColor: colors.theme_bg,
+                  }}
+                  source={go_icon}
+                /> */}
+                <Text style={styles.otp_text}>CONTINUE</Text>
+              </TouchableOpacity>
+            </View>
           </View>
+          <View style={{ margin: 20 }} />
+          <DropdownAlert
+            ref={(ref) => (this.dropDownAlertRef = ref)}
+            closeInterval={alert_close_timing}
+          />
         </View>
-        <View style={{ margin: 20 }} />
-        <DropdownAlert
-          ref={(ref) => (this.dropDownAlertRef = ref)}
-          closeInterval={alert_close_timing}
-        />
-      </View>
+      </ImageBackground>
     );
   }
 }
@@ -362,6 +394,11 @@ const styles = StyleSheet.create({
   },
   padding_20: {
     padding: 20,
+  },
+  otp_text: {
+    color: "#fff",
+    fontFamily: font_title,
+    fontSize: 16,
   },
   forgot_text: {
     color: colors.theme_fg_two,

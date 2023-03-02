@@ -287,11 +287,16 @@ class Splash extends Component<Props> {
           justifyContent: "center",
           height: "100%",
           backgroundColor: colors.theme_bg_three,
-          paddingHorizontal: 20,
+
+          flex: 1,
         }}
       >
         <StatusBar />
-        <Image style={styles.image} source={logo} resizeMode={"contain"} />
+        <Image
+          style={styles.image}
+          source={require("../assets/img/Splash_jpg.jpg")}
+          resizeMode={"cover"}
+        />
       </View>
     );
   }
@@ -316,7 +321,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Splash);
 
 const styles = StyleSheet.create({
   image: {
-    height: "50%",
-    width: "96%",
+    height: "100%",
+    width: "100%",
   },
 });

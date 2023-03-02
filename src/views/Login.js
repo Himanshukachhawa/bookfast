@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
   Text,
+  ImageBackground,
 } from "react-native";
 import * as colors from "../assets/css/Colors";
 import {
@@ -14,7 +15,10 @@ import {
   font_title,
   font_description,
   height_40,
+  height_35,
   go_icon,
+  width_50,
+  width_80,
 } from "../config/Constants";
 import PhoneInput from "react-native-phone-input";
 import axios from "axios";
@@ -131,14 +135,22 @@ class Login extends Component<Props> {
         }}
       >
         <Loader visible={this.state.isLoading} />
-        <View>
-          <View style={{ padding: 20, height: height_40 }}>
-            <Loader visible={isLoding} />
-            <Text style={styles.phone_title}>
-              {strings.enter_your_phone_number}
-            </Text>
-            <View style={styles.margin_20} />
-            {/* <PhoneInput
+        <ImageBackground
+          source={require("../assets/img/Splash_jpg.jpg")}
+          style={{ flex: 1 }}
+        >
+          <View>
+            <View
+              style={{ padding: 20, height: height_40, marginTop: height_35 }}
+            >
+              <Loader visible={isLoding} />
+              <Text style={styles.phone_title}>Welcome to Bookfast</Text>
+              <Text style={styles.phone_title1}>
+                Enter your mobile number to continue
+              </Text>
+
+              <View style={styles.margin_20} />
+              {/* <PhoneInput
               style={{ borderBottomColor: colors.theme_bg_two }}
               flagStyle={styles.flag_style}
               ref={(ref) => {
@@ -154,30 +166,42 @@ class Login extends Component<Props> {
               autoFormat={true}
               countries={["in"]}
             /> */}
-            <TextInput
-              value={this.state.phone_number}
-              placeholder={"+91"}
-              keyboardType={"number-pad"}
-              maxLength={10}
-              onChangeText={(text) => {
-                this.setState({ phone_number: text });
-              }}
-              style={{ borderBottomColor: "#000", borderBottomWidth: 1 }}
-            />
-            <View style={styles.margin_50} />
-            <TouchableOpacity onPress={this.check_phone_number.bind(this)}>
-              <Image
-                style={{
-                  alignSelf: "flex-end",
-                  height: 65,
-                  width: 65,
-                  tintColor: colors.theme_bg,
+              <TextInput
+                value={this.state.phone_number}
+                placeholder={"+91"}
+                keyboardType={"number-pad"}
+                maxLength={10}
+                onChangeText={(text) => {
+                  this.setState({ phone_number: text });
                 }}
-                source={go_icon}
+                style={{ borderBottomColor: "#000", borderBottomWidth: 1 }}
               />
-            </TouchableOpacity>
+              <View style={styles.margin_50} />
+              <TouchableOpacity
+                onPress={this.check_phone_number.bind(this)}
+                style={{
+                  backgroundColor: colors.theme_bg,
+                  width: width_80,
+                  alignSelf: "center",
+                  alignItems: "center",
+                  paddingVertical: 14,
+                  borderRadius: 20,
+                }}
+              >
+                {/* <Image
+                  style={{
+                    alignSelf: "flex-end",
+                    height: 65,
+                    width: 65,
+                    tintColor: colors.theme_bg,
+                  }}
+                  source={go_icon}
+                /> */}
+                <Text style={styles.otp_text}>SEND OTP</Text>
+              </TouchableOpacity>
+            </View>
           </View>
-        </View>
+        </ImageBackground>
       </SafeAreaView>
     );
   }
@@ -205,6 +229,19 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
 
 const styles = StyleSheet.create({
+  otp_text: {
+    color: "#fff",
+    fontFamily: font_title,
+    fontSize: 16,
+  },
+  phone_title1: {
+    alignSelf: "center",
+    color: colors.theme_bg_two,
+    alignSelf: "flex-start",
+    fontSize: 17,
+    letterSpacing: 0.5,
+    fontFamily: font_title,
+  },
   phone_title: {
     alignSelf: "center",
     color: colors.theme_fg_two,
@@ -214,7 +251,7 @@ const styles = StyleSheet.create({
     fontFamily: font_title,
   },
   margin_20: {
-    margin: 20,
+    margin: 15,
   },
   margin_50: {
     margin: 25,

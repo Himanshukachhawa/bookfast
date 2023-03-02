@@ -136,8 +136,8 @@ android {
         applicationId "com.bookfast"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 13
-        versionName "1.3"
+        versionCode 16
+        versionName "1.6"
     }
     splits {
         abi {

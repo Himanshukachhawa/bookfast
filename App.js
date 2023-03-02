@@ -408,7 +408,7 @@ function App() {
         />
         <Stack.Screen
           name="Password"
-          options={{ title: "Enter your OTP" }}
+          options={{ headerShown: false }}
           component={Password}
         />
         <Stack.Screen
