@@ -171,9 +171,19 @@ class Dashboard extends Component<Props> {
     database()
       .ref(`/customers/${global.id}`)
       .on("value", (snapshot) => {
+        var status = 0;
+        if (
+          snapshot.val().booking_status &&
+          snapshot.val().booking_status != null &&
+          snapshot.val().booking_status != undefined
+        ) {
+          status = snapshot.val().booking_status;
+        } else {
+          status = 0;
+        }
         if (
           snapshot.val() != null &&
-          snapshot.val().booking_status == 2 &&
+          status == 2 &&
           snapshot.val().booking_id != 0
         ) {
           this.props.navigation.navigate("Ride", {
@@ -207,9 +217,19 @@ class Dashboard extends Component<Props> {
         console.log("res", snapshot);
         let vehicles = [];
         snapshot.forEach(function (childSnapshot) {
+          var status = 0;
+          if (
+            childSnapshot.val().booking?.booking_status &&
+            childSnapshot.val().booking?.booking_status != null &&
+            childSnapshot.val().booking?.booking_status != undefined
+          ) {
+            status = childSnapshot.val().booking?.booking_status;
+          } else {
+            status = 0;
+          }
           if (
             childSnapshot.val() != null &&
-            childSnapshot.val().booking.booking_status == 0 &&
+            status == 0 &&
             childSnapshot.val().online_status == 1
           ) {
             vehicles.push({
